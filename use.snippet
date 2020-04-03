@@ -1,0 +1,9 @@
+	// 上传文件
+	/**
+	 * ${0:文件在服务器上的id等信息}
+	 */
+	const r$CURRENT_SECONDS_UNIX = await(() => {
+		const file_path = $1;	// 要上传的文件路径
+		const name = '$2';	// 文件名
+		return awx20(file_path, name);
+	})();
